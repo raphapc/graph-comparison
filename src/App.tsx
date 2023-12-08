@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { ChartJSPieChart } from "./features/react-chartjs-2/chartjs-pie-chart";
+import RechartPieChart from "./features/recharts/rechart-pie-chart";
+import VisxPieChart from "./features/visx/visx-pie-chart";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="display-charts">
+      <div className="chartsize">
+        <h3 className="text-center">
+          <span>Visx</span>
+        </h3>
+        <VisxPieChart width={400} height={400} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="chartsize">
+        <h3 className="text-center">
+          <span>React ChartJS</span>
+        </h3>
+        <ChartJSPieChart />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div className="chartsize">
+        <h3 className="text-center">
+          <span>Recharts</span>
+        </h3>
+        <RechartPieChart />
+      </div>
+      <div className="chartsize">
+        <h3 className="text-center">
+          <span>Visx Pie Chart</span>
+        </h3>
+        <VisxPieChart width={400} height={400} />
+      </div>
+      <div className="chartsize">
+        <h3 className="text-center">
+          <span>Visx Pie Chart</span>
+        </h3>
+        <VisxPieChart width={400} height={400} />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
