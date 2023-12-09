@@ -1,5 +1,6 @@
 import "./App.css";
-import { ChartJSPieChart } from "./features/react-chartjs-2/chartjs-pie-chart";
+import NivoPieChart from "./features/nivo/nivo-pie-chart";
+import ChartJSPieChart from "./features/react-chartjs-2/chartjs-pie-chart";
 import RechartPieChart from "./features/recharts/rechart-pie-chart";
 import VisxPieChart from "./features/visx/visx-pie-chart";
 
@@ -26,16 +27,16 @@ function App() {
       </div>
       <div className="chartsize">
         <h3 className="text-center">
-          <span>Visx Pie Chart</span>
+          <span>Nivo</span>
         </h3>
-        <VisxPieChart width={400} height={400} />
+        <NivoPieChart />
       </div>
-      <div className="chartsize">
+      {/* <div className="chartsize">
         <h3 className="text-center">
           <span>Visx Pie Chart</span>
         </h3>
         <VisxPieChart width={400} height={400} />
-      </div>
+      </div> */}
     </div>
   );
 }
