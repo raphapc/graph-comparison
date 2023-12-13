@@ -22,6 +22,8 @@
     "@visx/shape": "^3.5.0",
     "@visx/tooltip": "^3.3.0",
     "chart.js": "^4.4.1",
+    "highcharts": "^11.2.0",
+    "highcharts-react-official": "^3.2.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
