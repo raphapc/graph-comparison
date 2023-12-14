@@ -36,7 +36,7 @@ export default function HighchartsPieChart() {
     },
     plotOptions: {
       pie: {
-        size: 380,
+        size: 350,
         dataLabels: {
           enabled: true,
           distance: -100,
